@@ -22,12 +22,12 @@ html, body {
 /* Title and description styling */
 h1 {
   font-size: 2.25rem; /* text-4xl in Tailwind */
-  font-family: "Eater";
+  font-family: "kablammo";
 }
 
 p {
   margin-top: 0rem; /* mt-4 */
-  font-family: "Eater";
+  font-family: "kablammo";
 }
 
 /* Grid container for the dungeon */
@@ -55,16 +55,10 @@ p {
 }
 
 /* Fonts */
-.kablammo-custom {
+.kablammo {
   font-family: "Kablammo", system-ui;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
   font-variation-settings: "MORF" 0;
-}
-
-.eater-regular {
-  font-family: "Eater", serif;
-  font-weight: 400;
-  font-style: normal;
 }

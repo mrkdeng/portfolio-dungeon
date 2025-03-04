@@ -1,11 +1,12 @@
+"use client";
+import './portfolio.css';
 import { useState, useEffect } from "react";
-import './portfolio.css'; // Import the CSS file
 
-export default function Portfolio() {
+export default function Home() {
   const [playerPosition, setPlayerPosition] = useState({ x: 5, y: 5 });
   const gridSize = 10;
 
-  const movePlayer = (dx, dy) => {
+  const movePlayer = (dx: number, dy: number) => {
     setPlayerPosition((prev) => {
       const newX = Math.max(0, Math.min(gridSize - 1, prev.x + dx));
       const newY = Math.max(0, Math.min(gridSize - 1, prev.y + dy));
@@ -14,7 +15,7 @@ export default function Portfolio() {
   };
 
   useEffect(() => {
-    const handleKeyDown = (event) => {
+    const handleKeyDown = (event: KeyboardEvent) => {
       switch (event.key) {
         case "ArrowUp":
         case "w":
