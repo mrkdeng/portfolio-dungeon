@@ -1,5 +1,6 @@
 "use client";
-import './portfolio.css';
+import "@styles/global.css";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -57,6 +58,10 @@ export default function Home() {
             ></div>
           );
         })}
+      </div>
+      {/* Add the Link component to navigate to /standings */}
+      <div className="standings-link">
+        <Link href="/standings">Go to Standings</Link>
       </div>
     </div>
   );

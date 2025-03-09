@@ -4,7 +4,7 @@ export const metadata = {
   title: "Portfolio Dungeon",
   description: "Welcome to my portfolio dungeon",
   icons: {
-    icon: "/favicon.png",
+    icon: "favicon.png",
   },
 };
 
