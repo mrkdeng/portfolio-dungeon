@@ -1,5 +1,3 @@
-import { GetServerSideProps } from "next";
-
 // Define type for standings data
 interface Standing {
   teamId: number;
@@ -11,10 +9,6 @@ interface Standing {
   losses: number;
   winPct: number;
   currentStreak: string;
-}
-
-interface StandingsProps {
-  standings: Standing[];
 }
 
 export default async function Page() {
