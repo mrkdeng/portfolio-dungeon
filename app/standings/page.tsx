@@ -1,3 +1,5 @@
+import config from "config";
+
 // Define type for standings data
 interface Standing {
   teamId: number;
@@ -12,7 +14,7 @@ interface Standing {
 }
 
 export default async function Page() {
-  const data = await fetch('https://portfolio-dungeon-backend-production.up.railway.app/standings/')
+  const data = await fetch(`${config.backendServer.homeUrl}/standings/`)
   const standings: Standing[] = await data.json()
   return (
     <div>
