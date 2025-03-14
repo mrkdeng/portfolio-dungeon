@@ -1,6 +1,6 @@
 const config = {
     backendServer : {
-        homeUrl: 'https://pdb.up.railway.app',
+        homeUrl: 'http://127.0.0.1:8000',
         port: 8000,
     }
 };
